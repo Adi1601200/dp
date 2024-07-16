@@ -1,19 +1,9 @@
-import Done.ClimbingStairs;
-import Done.DecodeWaysTab;
-import Done.InterleavingStrings;
-import Done.UniqueBinarySearchTree;
+import Done.*;
 
 public class Main {
     public static void main(String[] args) {
-        InterleavingStrings intl = new InterleavingStrings();
-        System.out.println(intl.isInterleave("abababababababababababababababababababababababababababababababababababababababababababababababababbb",
-                "abababababababababababababababababababababababababababababababababababababababababababababababababab",
-                "abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababbb"));
-
-        System.out.println(intl.isInterleave(
-                "aab",
-                "axy",
-                "aaxaby"
-        ));
+        EditDistance ed = new EditDistance();
+        int ans = ed.minDistance("teacher","teacherly");
+        System.out.println("Answer = " + ans);
     }
 }
